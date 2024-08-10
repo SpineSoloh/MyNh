@@ -1,0 +1,470 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Header Styles */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a9b7b8;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.socialMedia, .additional-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.socialMedia li, .additional-links li {
+    margin-left: 20px;
+}
+
+.socialMedia li a, .additional-links li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.socialMedia li a:hover, .additional-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+.nav1 {
+    background-color: #007BFF; /* Adjust color as needed */
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-right input[type="text"] {
+    margin-left: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+/* Hero Section Styles */
+/* General styles for the hero section */
+#hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Hero slider styling */
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Initial visibility */
+.slide:nth-child(1) {
+    opacity: 1;
+}
+
+/* Hero content styling */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content button {
+    background-color: #ff9f00;
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.search {
+    margin-top: 2rem;
+}
+
+.search label {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.search input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.search button {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Social Media Icons */
+.socialMedia a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.socialMedia a:hover {
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Add font awesome for social media icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+.socialMedia a i {
+    font-size: 1.5rem;
+}
+
+
+/* General styles for the services section */
+#services {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Awards Section Styling */
+.awards-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.award {
+    margin: 0 20px;
+}
+
+.award img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Services Section Styling */
+.services-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.services-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Services Section Styles */
+.services {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services h2 {
+    color: #007BFF;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.services a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.service-card img {
+    max-width: 60px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    color: #007BFF;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+#find-care {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0073c8;
+    color: white;
+    padding: 50px 20px;
+    border-top: 5px solid #ffcc00; /* Optional: Yellow border at the bottom */
+}
+
+.find-care-content {
+    max-width: 50%;
+}
+
+.find-care-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.find-care-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 250px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e6b800;
+}
+
+.map img {
+    max-width: 400px;
+    height: auto;
+}
+
+footer {
+    background-color: white;
+    padding: 40px 20px;
+    border-top: 5px solid #ffcc00; /* Yellow border at the top */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    flex: 1;
+}
+
+.footer-links h3 {
+    color: #0073c8;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-social-career {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-social-career .btn-orange {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-social-career .social-media-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social-career .social-media-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.footer-social-career .social-media-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-newsletter {
+    text-align: center;
+}
+
+.footer-newsletter h3 {
+    color: #0073c8;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-newsletter .btn-orange {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
